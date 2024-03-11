@@ -1,4 +1,4 @@
-import DOT_SEPARATOR from "@/assets";
+import SVGS from "@/assets";
 
 export default function NavbarItems({ items }: { items: string[] }) {
   return (
@@ -14,7 +14,9 @@ export default function NavbarItems({ items }: { items: string[] }) {
               </a>
             </li>
             {index !== items.length - 1 && (
-              <li className="text-gray-300">{DOT_SEPARATOR}</li>
+              <li className="text-gray-300 w-4 text-center m-0">
+                {SVGS.DOT_SEPARATOR}
+              </li>
             )}
           </>
         );

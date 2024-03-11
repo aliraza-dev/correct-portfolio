@@ -3,6 +3,7 @@ import { Nunito } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/navbar";
 import { TSParticles } from "./components/navbar/particles-container";
+import Footer from "./components/footer";
 
 // const inter = Inter({ subsets: ["latin"] });
 const nunito = Nunito({ subsets: ["latin"] });
@@ -23,6 +24,8 @@ export default function RootLayout({
         <TSParticles />
         <Navbar />
         {children}
+
+        <Footer />
       </body>
     </html>
   );

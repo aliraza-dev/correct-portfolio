@@ -1,7 +1,7 @@
 import { Images } from "./images/images";
-import { DOT_SEPERATOR } from "./svg";
+import { SVGS } from "./svg";
 
 export default {
   ...Images,
-  ...DOT_SEPERATOR,
+  ...SVGS,
 };

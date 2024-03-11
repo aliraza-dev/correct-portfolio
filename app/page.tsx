@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Images } from "@/assets/images/images";
+import SVGS from "@/assets";
 
 export default function Home() {
   return (
@@ -25,8 +26,9 @@ export default function Home() {
             <h4>ReactJS | NodeJS | AWS | Docker | Database</h4>
           </article>
           {/* Know more button */}
-          <div className="rounded ring-1 ring-black px-7 py-2 cursor-pointer">
+          <div className="flex flex-row rounded ring-1 gap-2 ring-black px-7 py-2 cursor-pointer">
             Know More
+            <div className="w-5">{SVGS.RIGHT_ARROW}</div>
           </div>
         </div>
       </div>
