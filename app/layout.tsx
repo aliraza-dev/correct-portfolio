@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/navbar";
-import { TSParticles } from "./components/navbar/particles-container";
 import Footer from "./components/footer";
 
 // const inter = Inter({ subsets: ["latin"] });
@@ -20,10 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={nunito.className}>
-        <TSParticles />
+      <body className={nunito.className + "h-screen w-full container-snap"}>
         <Navbar />
-        {children}
+        <div className="min-h-screen">{children}</div>
 
         <Footer />
       </body>

@@ -32,7 +32,7 @@ export const TSParticles = () => {
   }, []);
 
   const particlesLoaded = async (container?: Container): Promise<void> => {
-    console.log(container);
+    // console.log(container);
   };
 
   const options: ISourceOptions = useMemo(
@@ -72,6 +72,7 @@ export const TSParticles = () => {
         color: {
           value: "#000000",
         },
+        zIndex: -1,
         line_linked: {
           color: "#ffffff",
           distance: 150,
