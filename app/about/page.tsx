@@ -87,7 +87,9 @@ export default function About() {
         {/* Array of what I do */}
         <div className="flex flex-col gap-5 w-full md:w-2/3 mx-auto">
           {aboutMe &&
-            aboutMe.map((content) => <InfoBox aboutMeContent={content} />)}
+            aboutMe.map((content, index: number) => (
+              <InfoBox key={"aboutMe" + index} aboutMeContent={content} />
+            ))}
         </div>
       </div>
     </section>

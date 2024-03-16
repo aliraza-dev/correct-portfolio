@@ -8,7 +8,7 @@ export default function NavbarItems({ items }: { items: NavbarType[] }) {
       {items.map((item: NavbarType, index: number) => {
         return (
           <>
-            <li>
+            <li key={"navbarItem" + index}>
               <Link href={item.url}>
                 <div className="text-sm text-gray-400 dark:text-gray-400 hover:text-gray-500">
                   {item.text}
