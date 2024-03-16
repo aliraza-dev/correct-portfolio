@@ -4,6 +4,7 @@ import SVGS from "@/assets";
 import MovingText from "@/components/common/moving-text";
 import TransparentButton from "@/components/common/transparent-button";
 import { TSParticles } from "./components/navbar/particles-container";
+import Link from "next/link";
 
 export default function Home() {
   const rotationStrings: string[] = [
@@ -37,7 +38,12 @@ export default function Home() {
               <h4>ReactJS | NodeJS | AWS | Docker | Database</h4>
             </article>
             {/* Know more button */}
-            <TransparentButton text="Know more" />
+            <Link
+              href="https://www.linkedin.com/in/mr-aliraza/"
+              target="_blank"
+            >
+              <TransparentButton text="Know more" />
+            </Link>
           </div>
         </div>
       </main>

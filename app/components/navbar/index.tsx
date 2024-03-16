@@ -13,6 +13,10 @@ const Navbar = () => {
       text: "About",
     },
     {
+      url: "/experience",
+      text: "Experience",
+    },
+    {
       url: "/projects",
       text: "Projects",
     },
