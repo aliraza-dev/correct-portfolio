@@ -2,11 +2,10 @@ import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/navbar";
-import { TSParticles } from "./components/navbar/particles-container";
 import Footer from "./components/footer";
 
 // const inter = Inter({ subsets: ["latin"] });
-const nunito = Nunito({ subsets: ["latin"] });
+const nunito = Nunito({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -21,11 +20,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={nunito.className}>
-        <TSParticles />
-        <Navbar />
-        {children}
+        <div className="h-screen w-full container-snap">
+          <Navbar />
+          <main className="min-h-screen py-8 mt-4 2xl:w-4/5 m-auto">
+            {children}
+          </main>
 
-        <Footer />
+          <Footer />
+        </div>
       </body>
     </html>
   );
