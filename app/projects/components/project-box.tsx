@@ -18,15 +18,21 @@ export default function ProjectBox({
 
         <h3 className="mx-0 my-2 text-xl text-gray-700">Contributions</h3>
 
-        {contributions?.map((contribution) => (
-          <BulletCheck content={contribution} />
+        {contributions?.map((contribution, index: number) => (
+          <BulletCheck
+            content={contribution}
+            key={index + "bullet-project-box"}
+          />
         ))}
 
         <h3 className="mx-0 my-2 text-xl text-gray-700">Technologies</h3>
 
         <div className="flex flex-wrap">
-          {technologies?.map((technology: SkillPointProps) => (
-            <SkillPoint {...technology} />
+          {technologies?.map((technology: SkillPointProps, index: number) => (
+            <SkillPoint
+              {...technology}
+              key={"skill-point-project-box" + index}
+            />
           ))}
         </div>
       </div>
