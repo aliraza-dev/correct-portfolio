@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { BulletCheck } from "./bullet-check";
-import { SkillPoint } from "./skill-point";
 import { ExperienceDetailsProps } from "@/types";
+import { BulletCheck } from "@/components/common/bullet-check/bullet-check";
+import { SkillPoint } from "@/components/common/skill-point/skill-point";
 
 const ExperienceDetails: React.FC<ExperienceDetailsProps> = ({
   title,
