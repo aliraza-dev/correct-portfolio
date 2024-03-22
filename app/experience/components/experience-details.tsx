@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { BulletCheck } from "./bullet-check";
-import { SkillPoint } from "./skill-point";
 import { ExperienceDetailsProps } from "@/types";
+import { BulletCheck } from "@/components/common/bullet-check/bullet-check";
+import { SkillPoint } from "@/components/common/skill-point/skill-point";
 
 const ExperienceDetails: React.FC<ExperienceDetailsProps> = ({
   title,
@@ -34,20 +34,28 @@ const ExperienceDetails: React.FC<ExperienceDetailsProps> = ({
         <h3 className="mt-4 mb-2 text-gray-800">Role</h3>
         <div className="grid">
           {roleDetails &&
-            roleDetails.map((role) => <BulletCheck content={role} />)}
+            roleDetails.map((role, index: number) => (
+              <BulletCheck key={"roleBullets" + index} content={role} />
+            ))}
         </div>
 
         <h3 className="mt-4 mb-2 text-gray-800">Accomplishments</h3>
         <div className="grid">
           {accomplishments &&
-            accomplishments.map((accomplishment) => (
-              <BulletCheck content={accomplishment} />
+            accomplishments.map((accomplishment, index: number) => (
+              <BulletCheck
+                content={accomplishment}
+                key={index + "accomplishments"}
+              />
             ))}
         </div>
 
         <h3 className="mt-4 mb-2 text-gray-800">Skills</h3>
         <div className="flex">
-          {technologies && technologies.map((tech) => <SkillPoint {...tech} />)}
+          {technologies &&
+            technologies.map((tech, index: number) => (
+              <SkillPoint key={"techSkillpoint" + index} {...tech} />
+            ))}
         </div>
       </div>
     </div>

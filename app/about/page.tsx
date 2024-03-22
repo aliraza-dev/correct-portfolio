@@ -43,7 +43,7 @@ export default function About() {
     <section className="flex flex-col md:flex-row w-full my-10 ">
       {/* right side */}
       <div className="md:w-1/3 justify-center text-center mx-5">
-        <div className="border shadow-md  bg-[rgba(255,255,255,0.7)] mx-4 md:mx-16 px-6 text-center justify-center">
+        <div className="border shadow-md  bg-[rgba(255,255,255,0.7)] mx-4 px-6 text-center justify-center">
           <MyAvatar />
 
           <div className="text-3xl font-bold text-center text-gray-800 my-4">
@@ -87,7 +87,9 @@ export default function About() {
         {/* Array of what I do */}
         <div className="flex flex-col gap-5 w-full md:w-2/3 mx-auto">
           {aboutMe &&
-            aboutMe.map((content) => <InfoBox aboutMeContent={content} />)}
+            aboutMe.map((content, index: number) => (
+              <InfoBox key={"aboutMe" + index} aboutMeContent={content} />
+            ))}
         </div>
       </div>
     </section>

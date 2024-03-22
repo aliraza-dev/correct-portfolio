@@ -31,7 +31,7 @@ export default function Home() {
           {/* Introductory articles */}
           <div className="flex flex-col gap-5 w-full justify-center items-center ">
             <article className="prose prose-sm lg:prose-xl text-center 2xl:prose-2xl">
-              <h1>Hi, I'm Ali Raza</h1>
+              <h1>{"Hi, I'm Ali Raza"}</h1>
 
               <MovingText rotationStrings={rotationStrings} />
 
@@ -42,7 +42,7 @@ export default function Home() {
               href="https://www.linkedin.com/in/mr-aliraza/"
               target="_blank"
             >
-              <TransparentButton text="Know more" />
+              <TransparentButton text={"Know more"} />
             </Link>
           </div>
         </div>
