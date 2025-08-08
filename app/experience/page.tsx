@@ -12,7 +12,10 @@ const Experience = () => {
       {pastExperiences &&
         pastExperiences.map(
           (experience: ExperienceDetailsProps, index: number) => (
-            <ExperienceDetails key={index + "exp"} {...experience} />
+            <ExperienceDetails
+              key={index + "exp" + experience.title}
+              {...experience}
+            />
           )
         )}
     </section>

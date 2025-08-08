@@ -51,7 +51,7 @@ const ExperienceDetails: React.FC<ExperienceDetailsProps> = ({
         </div>
 
         <h3 className="mt-4 mb-2 text-gray-800">Skills</h3>
-        <div className="flex">
+        <div className="flex flex-wrap">
           {technologies &&
             technologies.map((tech, index: number) => (
               <SkillPoint key={"techSkillpoint" + index} {...tech} />

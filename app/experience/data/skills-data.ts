@@ -2,14 +2,15 @@ import { ExperienceDetailsProps } from "@/types";
 
 export const pastExperiences: ExperienceDetailsProps[] = [
   {
-    title: "Senior Consultant - Grade IV",
+    title: "Principal Consultant - Grade III",
     companyName: "Systems Ltd.",
-    startDate: "Feb 2022",
+    startDate: "Feb 2025",
     roleDetails: [
-      "Working as a JavaScript Full stack developer",
-      "Working on front-end in ReactJS and Tailwind",
-      "Writing backend APIs and DB migrations",
-      "Doing Test driven development to ensure well-tested and trusted deliverables",
+      "Technical Teamlead",
+      "Frontend development with React & Tailwind",
+      "Backend development with Nestjs Mono&Micro",
+      "Solutioning of requirements from client",
+      "Deployment and Delivery",
     ],
     accomplishments: [
       "Wrote a project campass system to manage onsite tasks",
@@ -18,6 +19,58 @@ export const pastExperiences: ExperienceDetailsProps[] = [
     technologies: [
       {
         content: "AWS",
+        textColor: "text-yellow-800",
+        bgColor: "bg-yellow-200",
+      },
+      {
+        content: "Reactjs/Tailwind",
+        textColor: "text-gray-800",
+        bgColor: "bg-gray-200",
+      },
+      {
+        content: "NestJS",
+        textColor: "text-green-800",
+        bgColor: "bg-teal-200",
+      },
+      {
+        content: "Docker",
+        textColor: "text-blue-600",
+        bgColor: "bg-blue-100",
+      },
+      {
+        content: "Google- Analyics and Tags",
+        textColor: "text-green-600",
+        bgColor: "bg-green-50",
+      },
+      {
+        content: "Vertex AI",
+        textColor: "text-black-600",
+        bgColor: "bg-blue-200",
+      },
+      {
+        content: "AAD - SAML2.0 with Keycloak",
+        textColor: "text-green-800",
+        bgColor: "bg-rose-300",
+      },
+    ],
+  },
+  {
+    title: "Senior Consultant - Grade IV",
+    companyName: "Systems Ltd.",
+    startDate: "Feb 2024",
+    roleDetails: [
+      "Working as a JavaScript Full stack developer",
+      "Working on front-end in ReactJS and Tailwind",
+      "Writing backend APIs and DB migrations",
+      "Doing Test driven development to ensure well-tested and trusted deliverables",
+    ],
+    accomplishments: [
+      "Star of the Quarter - 2024",
+      "Successfully delivered multiple applications. With strong client intimacy, team scaled to 15 people",
+    ],
+    technologies: [
+      {
+        content: "GCP",
         textColor: "text-yellow-800",
         bgColor: "bg-yellow-200",
       },
@@ -42,7 +95,7 @@ export const pastExperiences: ExperienceDetailsProps[] = [
         bgColor: "bg-red-50",
       },
       {
-        content: "Docker",
+        content: "K8s",
         textColor: "text-blue-600",
         bgColor: "bg-blue-100",
       },

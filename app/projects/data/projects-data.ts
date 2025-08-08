@@ -12,7 +12,7 @@ export const ProjectsData: MyProjectsType[] = [
     ],
     technologies: [
       {
-        content: "PERL",
+        content: "AWS (S3,RDS,EC2,Lambda)",
         textColor: "text-yellow-800",
         bgColor: "bg-yellow-200",
       },
@@ -22,12 +22,12 @@ export const ProjectsData: MyProjectsType[] = [
         bgColor: "bg-green-50",
       },
       {
-        content: "jQuery",
+        content: "Nextjs",
         textColor: "text-blue-800",
         bgColor: "bg-blue-50",
       },
       {
-        content: "SASS",
+        content: "BullMQ - Redis",
         textColor: "text-pink-800",
         bgColor: "bg-pink-50",
       },
@@ -42,56 +42,52 @@ export const ProjectsData: MyProjectsType[] = [
         bgColor: "bg-green-50",
       },
       {
-        content: "PostgreSQL",
+        content: "MySQL",
         textColor: "text-gray-800",
         bgColor: "bg-gray-200",
       },
     ],
   },
   {
-    title: "Motorshow",
-    description: "An ecommerce store for motorbikes and cars",
+    title: "Salam Telecom",
+    description:
+      "Playing role of a Technical Team Lead and Principal Software Engineer",
     contributions: [
-      "Wrote backend APIs to be consumed by WordPress and React Dashboard",
-      "Designed the DB schema and wrote Laravel's DB migrations",
-      "Implemented Auth using passport JS for Laravel",
-      "Integrated Stripe and managed DB for storing customers information",
+      "Developed and deployed over 7 web applications",
+      "Leading a team of fullstack, frontend, backend and ui developers",
+      "Implemented SSO with SAML2.0 between AAD and Keycloak",
+      "Developed Microservices in Nest.js",
     ],
     technologies: [
       {
-        content: "PHP (Laravel)",
+        content: "Nestjs (Mono & Micro)",
         textColor: "text-red-800",
         bgColor: "bg-red-200",
       },
       {
-        content: "Bootstrap",
+        content: "Tailwind",
         textColor: "text-green-800",
         bgColor: "bg-green-50",
       },
       {
-        content: "jQuery",
+        content: "Reactjs",
         textColor: "text-blue-800",
         bgColor: "bg-blue-50",
       },
       {
-        content: "SASS",
+        content: "GCP",
         textColor: "text-pink-800",
         bgColor: "bg-pink-50",
       },
       {
-        content: "ReactJS",
+        content: "Vertex AI",
         textColor: "text-blue-700",
         bgColor: "bg-blue-200",
       },
       {
-        content: "NodeJS",
+        content: "Keycloak",
         textColor: "text-green-600",
         bgColor: "bg-green-50",
-      },
-      {
-        content: "PostgreSQL",
-        textColor: "text-gray-800",
-        bgColor: "bg-gray-200",
       },
     ],
   },
