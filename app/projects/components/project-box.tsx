@@ -8,7 +8,7 @@ export default function ProjectBox({
   projectDetails: MyProjectsType;
 }) {
   return (
-    <div className="prose flex flex-col mx-auto overflow-hidden w-96 bg-white shadow-lg rounded-lg text-gray-500">
+    <div className="prose flex flex-col overflow-hidden w-96 bg-white shadow-lg rounded-lg text-gray-500">
       <div className="flex items-center bg-gray-900 w-full px-5 py-1">
         <div className="text-white text-lg font-bold">{title}</div>
       </div>

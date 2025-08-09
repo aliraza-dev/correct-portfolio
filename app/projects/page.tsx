@@ -16,7 +16,7 @@ const Projects = () => {
       </div>
 
       {/* Project boxes */}
-      <div className="flex p-2 md:p-10 flex-wrap gap-y-8 w-full">
+      <div className="flex p-2 md:p-10 flex-wrap gap-y-8 w-full gap-4">
         {myProjects?.map((project: MyProjectsType, index: number) => (
           <ProjectBox projectDetails={project} key={index + "projects-data"} />
         ))}

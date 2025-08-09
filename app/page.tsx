@@ -35,7 +35,7 @@ export default function Home() {
 
               <MovingText rotationStrings={rotationStrings} />
 
-              <h4>ReactJS | NodeJS | AWS | Docker | Database</h4>
+              <h4>ReactJS | NodeJS | AWS/GCP | Docker | Database</h4>
             </article>
             {/* Know more button */}
             <Link
